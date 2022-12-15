@@ -1,0 +1,38 @@
+{
+  "name": "tessavwalstijn.front-end",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "demo-prd": "yarn run prod-build && yarn run prod",
+    "demo-dev": "yarn run build && yarn run start",
+    "build": "yarn run build-tessavwalstijn",
+    "build-tessavwalstijn": "cd ./apps/tessavwalstijn && yarn run build",
+    "prod": "cd ./apps/server && yarn run prod",
+    "prod-build": "yarn run prod-tessavwalstijn",
+    "prod-tessavwalstijn": "cd ./apps/tessavwalstijn && yarn run build-prod",
+    "start": "cd ./apps/server && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TessavWalstijn/nextjs.portfolio-site-v5.git"
+  },
+  "author": "TessavWalstijn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TessavWalstijn/nextjs.portfolio-site-v5/issues"
+  },
+  "homepage": "https://github.com/TessavWalstijn/nextjs.portfolio-site-v5#readme",
+  "workspaces": [
+    "apps/server",
+    "apps/tessavwalstijn",
+    "apps/shared-ui",
+    "apps/shared-content"
+  ],
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
+  "dependencies": {}
+}

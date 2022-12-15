@@ -1,0 +1,11 @@
+{
+  "name": "shared-content",
+  "version": "0.0.1",
+  "description": "Contentful",
+  "main": "index.js",
+  "author": "TessavWalstijn Squeeble",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

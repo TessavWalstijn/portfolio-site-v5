@@ -1,0 +1,21 @@
+# This workflow file is commented because it is a copy of the original repo
+
+# name: Deploy Node.js CI => VPS - Prod
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   build:
+#     runs-on: [self-hosted, linux, X64, squeeble-fe-prod]
+
+#     env:
+#       NODE_ENV: development
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+      
+#       - name: Build and start container
+#         run: docker compose up -d front-end-system-dev --build

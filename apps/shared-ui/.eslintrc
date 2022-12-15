@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": false,
+    "node": true
+  },
+  "extends": ["prettier"],
+  "plugins": ["airbnb", "typescript"],
+  "rules": {
+    "prettier/prettier": "error",
+    "prop-types": "off",
+    "semi": [2, "never"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "operator-linebreak": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "sort-keys": "error",
+    "no-case-declarations": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "root-import": {
+        "rootPathPrefix": "@",
+        "rootPathSuffix": "react",
+        "extensions": [".js", ".ts", ".tsx", ".jsx", ".mdx"]
+      }
+    }
+  }
+}
